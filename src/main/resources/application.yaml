@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: LearnSpring
+server:
+  port: 8081
