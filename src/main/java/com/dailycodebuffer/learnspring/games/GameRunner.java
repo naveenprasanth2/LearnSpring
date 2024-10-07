@@ -1,8 +1,14 @@
 package com.dailycodebuffer.learnspring.games;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
     private final GamingConsole gamingConsole;
-    public GameRunner(GamingConsole gamingConsole) {
+    @Autowired
+    public GameRunner(@Qualifier("pacMan") GamingConsole gamingConsole) {
         this.gamingConsole = gamingConsole;
     }
 
