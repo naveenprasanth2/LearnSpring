@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class BusinessCalculationService {
     private final DataService dataService;
 
-    public BusinessCalculationService(@Qualifier("mongoDBDataService") DataService dataService) {
+    public BusinessCalculationService(@Qualifier("com.dailycodebuffer.learnspring.calculation.mongoDBDataService") DataService dataService) {
         this.dataService = dataService;
     }
 

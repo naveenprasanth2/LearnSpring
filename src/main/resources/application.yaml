@@ -1,5 +1,8 @@
 spring:
   application:
     name: LearnSpring
+  config:
+    import: classpath:configs/
+
 server:
   port: 8081
