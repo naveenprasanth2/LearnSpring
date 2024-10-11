@@ -14,6 +14,7 @@ public class BusinessCalculationService {
     }
 
     public int findMax() {
+        System.out.println("Entered findMax method");
         return Arrays.stream(dataService.retrieveData()).max().orElse(0);
     }
 }
